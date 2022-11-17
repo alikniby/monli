@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONLI</title>
+    <link rel="icon" href="https://monli.se/1647953079612-rem….png" type="image/icon type">
+    <link rel="stylesheet" href="C:\Users\alka1\Desktop\mon\style.css">
+</head>
+<link rel="stylesheet" href="https://monli.se/style.css">
+<body>
+    
+        <div class="proto-container">
+              <div class="proto"></div>
+              <div class="proto"></div>
+              <div class="proto"></div>
+              <div class="proto"></div>
+          </div>
+      
+          <div class="container">
+              <div class="inner">
+                  <div class="left">
+                  <img src="https://monli.se/monreal.png" alt=" Logo" class="logo">
+      
+                      <div class="content">
+                          <h1> FÖR ETT <span>
+                      
+                            LIVSLÅNGT LÄRANDE</span></h1>
+      
+                          <p>Monli är en digital utbildningplattform och kunskapsnätverk som ger en samlingsplats för professionell och personlig utveckling. Vi vill utmana de traditionella utbildningsmetoderna för att skapa nya möjligheter för ett livslångt lärande. Med projektbaserad lärande kopplar vi samman människor genom kunskap.</p>
+                            
+                          <p class="light">Monli Studio är en av de första i Sverige som använder 01 EDU-pedagogi. Detta innebär att vi tar in riktiga utmaningar in till klassrummet.
+                           
+                            </p>
+                      </div>
+                  </div>
+                  <div class="right">
+
+                    
+               
+
+                    
+                      <p>Var först att ta reda på när utbildnignarna startar</p>
+                      <form action="https://formsubmit.co/1a69e2ec378dd33a1c5cc022cb123de1 " method="POST">
+                      <input type="text" name="email" id="email" placeholder="kontakt@monli.se">  
+                     
+                      <button type="submit" onclick="myFunction()">Kontakta mig </button>
+                      <p id="demo"></p>
+                      <div class="attention">
+                          <img src="https://monli.se/1649765256974.jfif" alt="icon" class="me">
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/arrow_copy.svg" alt="Arrow pointing to email form" class="arrow">
+                      </div>
+                  </div>
+              </div>
+          </div>
+       
+          
+
+         
+      
+        
+            <script id="rendered-js" >
+                
+      let left = document.querySelector('.left');
+      let content = document.querySelector('.content');
+      let protos = document.querySelectorAll('.proto');
+      function myFunction() {
+    document.getElementById("demo").innerHTML = "Tack vi återkommer!";
+}
+      left.addEventListener('mousemove', event => {
+        let move = event.clientX * 0.05 + 4;
+        let move2 = event.clientX * 0.003;
+        content.style.transform = `translateX(-${move2}%)`;
+      
+        protos.forEach(proto => {
+          proto.style.transform = `translateX(${move}%)`;
+        });
+      });
+      
+          </script>
+      
+        
+      
+      </body>
+      
+      </html>
+    
